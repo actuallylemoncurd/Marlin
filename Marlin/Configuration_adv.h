@@ -223,7 +223,7 @@
    * As described above, except for the bed (M140/M190/M303).
    */
   #define WATCH_BED_TEMP_PERIOD 80 // Seconds
-  #define WATCH_BED_TEMP_INCREASE 12 // Degrees Celsius
+  #define WATCH_BED_TEMP_INCREASE 2 // Degrees Celsius
 #endif
 
 /**
@@ -2491,7 +2491,7 @@
    * M912 - Clear stepper driver overtemperature pre-warn condition flag.
    * M122 - Report driver parameters (Requires TMC_DEBUG)
    */
-  #define MONITOR_DRIVER_STATUS
+  //#define MONITOR_DRIVER_STATUS
 
   #if ENABLED(MONITOR_DRIVER_STATUS)
     #define CURRENT_STEP_DOWN     50  // [mA]
