@@ -6,7 +6,8 @@ if ( $gitSync = "pull" )
 }
 if ( $gitSync = "push" )
 {
+  $gitChanges = Read-Host -Prompt "What changes have you made?"
   git add .
-  git commit -m "made some changes"
+  git commit -m $gitChanges
   git push
 }
