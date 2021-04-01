@@ -1,0 +1,4 @@
+git add .
+git commit -m "made some changes"
+git push
+pause
